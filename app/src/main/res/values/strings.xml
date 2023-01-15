@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Grandmas Ice Cream</string>
+    <string name="vanilia">VANÍLIA</string>
+    <string name="_1euro">1 €</string>
+    <string name="kosarba">KOSÁRBA</string>
+    <string name="kosar">Kosár</string>
+    <string name="extrak">Extrák</string>
+    <string name="rendeles">Rendelés</string>
+    <string name="csillaggal_jelolt_mezo">* A csillaggal jelölt mező kitöltése kötelező!</string>
+</resources>

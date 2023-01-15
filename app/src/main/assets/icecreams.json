@@ -1,0 +1,46 @@
+{
+  "basePrice": 1,
+  "iceCreams": [
+    {
+      "id": 1,
+      "name": "Vanília",
+      "status": "available",
+      "imageUrl": "https://raw.githubusercontent.com/udemx/hr-resources/master/images/vanilia.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Karamell",
+      "status": "available",
+      "imageUrl": "https://raw.githubusercontent.com/udemx/hr-resources/master/images/karamell.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Tutti-frutti",
+      "status": "available"
+    },
+    {
+      "id": 4,
+      "name": "Csokoládé",
+      "status": "unavailable",
+      "imageUrl": "https://raw.githubusercontent.com/udemx/hr-resources/master/images/csokolade.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Rumosdió",
+      "status": "available",
+      "imageUrl": "https://raw.githubusercontent.com/udemx/hr-resources/master/images/dio.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Kávé",
+      "status": "available",
+      "imageUrl": "https://raw.githubusercontent.com/udemx/hr-resources/master/images/kave.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Pisztácia",
+      "status": "melted",
+      "imageUrl": "https://raw.githubusercontent.com/udemx/hr-resources/master/images/pisztacia.jpg"
+    }
+  ]
+}

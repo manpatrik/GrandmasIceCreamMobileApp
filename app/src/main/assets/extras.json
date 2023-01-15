@@ -1,0 +1,63 @@
+[
+  {
+    "required": true,
+    "type": "Tölcsérek",
+    "items": [
+      {
+        "price": 0,
+        "name": "Normál tölcsér",
+        "id": 1
+      },
+      {
+        "price": 1,
+        "name": "Édes tölcsér",
+        "id": 2
+      },
+      {
+        "price": 2,
+        "name": "Csokis tölcsér",
+        "id": 3
+      },
+      {
+        "price": 5,
+        "name": "Kehely",
+        "id": 4
+      }
+    ]
+  },
+  {
+    "type": "Egyéb",
+    "items": [
+      {
+        "price": 4,
+        "name": "Cukorvarázs",
+        "id": 5
+      },
+      {
+        "price": 2,
+        "name": "Roletti",
+        "id": 6
+      },
+      {
+        "price": 2,
+        "name": "Ostya",
+        "id": 7
+      }
+    ]
+  },
+  {
+    "type": "Öntetek",
+    "items": [
+      {
+        "price": 1,
+        "name": "Eper öntet",
+        "id": 8
+      },
+      {
+        "price": 1,
+        "name": "Vanília öntet",
+        "id": 9
+      }
+    ]
+  }
+]
