@@ -50,20 +50,31 @@ public class IceCreamsAtivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
 
-        iceCreams = JSONLoader.loadIceCreamsFromJson(this);
-        extras = JSONLoader.loadExtrasFromJson(this);
         cartItems = new ArrayList<>();
         requiredExtraFirstItemIds = new ArrayList<>();
 
-        setRequiredExtras();
-
         iceCreamsRecyclerView = findViewById(R.id.iceCreamsRecyclerView);
 
-        iceCreamItemAdapter = new IceCreamItemAdapter(this, iceCreams);
-        iceCreamsRecyclerView.setAdapter(iceCreamItemAdapter);
-        iceCreamsRecyclerView.setLayoutManager(new LinearLayoutManager(this));
+        Thread jsonLoadThread = new Thread() {
+            @Override
+            public void run() {
+                iceCreams = JSONLoader.loadIceCreamsFromJson(IceCreamsAtivity.this);
+                extras = JSONLoader.loadExtrasFromJson(IceCreamsAtivity.this);
+                if (iceCreams != null && extras != null) {
+                    runOnUiThread(() -> {
+                        setRequiredExtras();
 
-        iceCreamItemAdapter.notifyDataSetChanged();
+                        iceCreamItemAdapter = new IceCreamItemAdapter(IceCreamsAtivity.this, iceCreams);
+                        iceCreamsRecyclerView.setAdapter(iceCreamItemAdapter);
+                        iceCreamsRecyclerView.setLayoutManager(new LinearLayoutManager(IceCreamsAtivity.this));
+
+                        iceCreamItemAdapter.notifyDataSetChanged();
+                    });
+                }
+            }
+        };
+
+        jsonLoadThread.start();
     }
 
     @Override
